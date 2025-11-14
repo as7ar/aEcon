@@ -1,0 +1,18 @@
+package kr.astar.aEcon.utilities
+
+import kr.astar.aEcon.cmds.EcoCommand
+import kr.astar.aEcon.cmds.MoneyCommand
+import net.kyori.adventure.text.Component
+import org.bukkit.command.CommandSender
+import org.bukkit.plugin.java.JavaPlugin
+
+fun registryCommands(plugin: JavaPlugin) {
+    EcoCommand(plugin)
+    MoneyCommand(plugin)
+}
+
+fun CommandSender.sendMessage(component: Component, prefix:Boolean) {
+    this.sendMessage(if (prefix) {
+        Manager().getPrefix().append(component)
+    } else {component})
+}

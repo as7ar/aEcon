@@ -1,8 +1,8 @@
 name: aEcon
 version: ${version}
-main: kr.apo2073.aEcon.AEcon
+main: kr.astar.aEcon.AEcon
 api-version: '1.17'
-author: 아포칼립스
+author: [AS7AR]
 prefix: aEcon
 depend: [Vault]
 softdepend: [PlaceholderAPI]
@@ -29,4 +29,4 @@ permissions:
     default: not op
 
 libraries:
-  - org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.1.0
+  - org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.2.21
